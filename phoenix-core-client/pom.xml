@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache.phoenix</groupId>
     <artifactId>phoenix</artifactId>
-    <version>5.2.1-SNAPSHOT</version>
+    <version>5.2.0-1.0</version>
   </parent>
   <artifactId>phoenix-core-client</artifactId>
   <name>Phoenix Core Client</name>
@@ -48,13 +48,9 @@
                   import java.util.regex.Pattern;
                   import java.lang.Integer;
 
-                  versionPattern = Pattern.compile("(\\d+)\\.(\\d+)\\.(\\d+)[^.]*$");
-                  versionMatcher = versionPattern.matcher("${hbase.version}");
-                  versionMatcher.find();
-
-                  hbaseMajor = Integer.parseInt(versionMatcher.group(1));
-                  hbaseMinor = Integer.parseInt(versionMatcher.group(2));
-                  hbasePatch = Integer.parseInt(versionMatcher.group(3));
+                  hbaseMajor = 2;
+                  hbaseMinor = 6;
+                  hbasePatch = 0;
 
                   hbaseMajor == 2 &amp;&amp; (
                     ("${hbase.compat.version}".equals("2.4.1")
