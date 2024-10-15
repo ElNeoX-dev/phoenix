@@ -20,7 +20,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.apache.phoenix</groupId>
   <artifactId>phoenix</artifactId>
-  <version>5.2.1-SNAPSHOT</version>
+  <version>5.2.0-1.0</version>
   <packaging>pom</packaging>
   <name>Apache Phoenix</name>
   <description>A SQL layer over HBase</description>
@@ -75,7 +75,7 @@
     <!-- Hadoop and Hbase-thirdparty version -->
     <!-- These are expected to be overridden to conform to cluster versions
     along with hbase.version (defined in profiles) -->
-    <hadoop.version>3.2.4</hadoop.version>
+    <hadoop.version>3.3.6-1.0</hadoop.version>
 
     <phoenix.thirdparty.version>2.1.0</phoenix.thirdparty.version>
     <hbase.suffix>hbase-${hbase.profile}</hbase.suffix>
@@ -86,7 +86,7 @@
     <hbase-2.4.runtime.version>2.4.18</hbase-2.4.runtime.version>
     <hbase-2.5.0.runtime.version>2.5.3-hadoop3</hbase-2.5.0.runtime.version>
     <hbase-2.5.runtime.version>2.5.10-hadoop3</hbase-2.5.runtime.version>
-    <hbase-2.6.runtime.version>2.6.0-hadoop3</hbase-2.6.runtime.version>
+    <hbase-2.6.runtime.version>2.6.0-1.0</hbase-2.6.runtime.version>
 
     <compileSource>1.8</compileSource>
     <maven.compiler.source>${compileSource}</maven.compiler.source>
